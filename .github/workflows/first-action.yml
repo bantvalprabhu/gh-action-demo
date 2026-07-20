@@ -1,0 +1,11 @@
+name: first-workflow
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-slim
+    steps:
+      - name: Print greeting
+        run: echo "Hello world"
+      - name: Print info background
+        run : cat /etc/*release*
+      
